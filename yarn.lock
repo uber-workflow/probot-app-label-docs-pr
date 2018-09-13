@@ -10,9 +10,9 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@octokit/rest@^15.9.4":
-  version "15.9.5"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-15.9.5.tgz#e356d202bd0b517e381f705ad77d98ccb84e0c65"
+"@octokit/rest@^15.11.0":
+  version "15.11.2"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-15.11.2.tgz#61bbfb6fa572eff0643cbe62ef695adac194ca8a"
   dependencies:
     before-after-hook "^1.1.0"
     btoa-lite "^1.0.0"
@@ -23,12 +23,12 @@
     node-fetch "^2.1.1"
     url-template "^2.0.8"
 
-"@octokit/webhooks@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@octokit/webhooks/-/webhooks-3.1.1.tgz#589830d3a51489b6d689094f5355b570c142c086"
+"@octokit/webhooks@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@octokit/webhooks/-/webhooks-5.0.2.tgz#fbf31398f0d235199591cef3c4a8fef7073c6073"
   dependencies:
     buffer-equal-constant-time "^1.0.1"
-    debug "^3.1.0"
+    debug "^4.0.0"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -495,9 +495,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bottleneck@^2.4.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/bottleneck/-/bottleneck-2.6.0.tgz#cbc557383fd1f63cadc87e1141b1ad766863b863"
+bottleneck@^2.8.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/bottleneck/-/bottleneck-2.10.0.tgz#276c1cd97a3df7967f72aa035572d68bf6241e44"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -881,6 +881,12 @@ debug@3.1.0, debug@^3.1.0:
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
     ms "2.0.0"
+
+debug@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
+  dependencies:
+    ms "^2.1.1"
 
 decamelize@^1.0.0, decamelize@^1.1.1:
   version "1.2.0"
@@ -1887,6 +1893,10 @@ is-accessor-descriptor@^1.0.0:
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+
+is-base64@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/is-base64/-/is-base64-0.0.5.tgz#39ecd12e937c667edd3b17fa677036825483b477"
 
 is-buffer@^1.1.5, is-buffer@~1.1.1:
   version "1.1.6"
@@ -3301,13 +3311,13 @@ private@^0.1.7:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
 
-probot@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/probot/-/probot-7.0.1.tgz#8ee68e0f39b25b840243c7a8b9ae1ce7641fb403"
+probot@7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/probot/-/probot-7.1.2.tgz#0326524dc56b40b812e763bb5a33d98ae722d319"
   dependencies:
-    "@octokit/rest" "^15.9.4"
-    "@octokit/webhooks" "^3.1.1"
-    bottleneck "^2.4.0"
+    "@octokit/rest" "^15.11.0"
+    "@octokit/webhooks" "^5.0.2"
+    bottleneck "^2.8.0"
     bunyan "^1.8.12"
     bunyan-format "^0.2.1"
     bunyan-sentry-stream "^1.1.0"
@@ -3317,6 +3327,7 @@ probot@7.0.1:
     express "^4.16.2"
     express-async-errors "^3.0.0"
     hbs "^4.0.1"
+    is-base64 "0.0.5"
     js-yaml "^3.9.1"
     jsonwebtoken "^8.1.0"
     pkg-conf "^2.0.0"
