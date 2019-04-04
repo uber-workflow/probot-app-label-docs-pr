@@ -32,7 +32,7 @@ module.exports = robot => {
         }),
       );
 
-      return compare.data.files.every(file =>
+      return compare.data.files.some(file =>
         docsExtensions.has(extname(file.filename)),
       );
     }
