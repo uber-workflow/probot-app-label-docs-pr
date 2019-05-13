@@ -68,7 +68,7 @@ module.exports = robot => {
 
 async function setStatus(context, {state, description}) {
   const {github} = context;
-  return github.repos.createForAuthenticatedUserStatus(
+  return github.repos.createStatus(
     context.issue({
       state,
       description,
